@@ -160,7 +160,8 @@ class FlutterFeathersjsSocketio extends FlutterFeathersjsClient {
         asyncTask.completeError(featherJsError!); //Complete with error
       } else {
         // Complete with success
-        asyncTask.complete(dataResponse[1]["user"]);
+        // asyncTask.complete(dataResponse[1]["user"]);
+        asyncTask.complete(dataResponse[1]);
       }
     });
 
